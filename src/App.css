@@ -1,3 +1,5 @@
+/* App.css */
+
 body {
   display: flex;
   justify-content: center;
@@ -10,7 +12,7 @@ body {
   background-repeat: no-repeat;
 }
 
-#app_island {
+#app-container {
   background-color: #ffffffb4;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +30,7 @@ body {
   overflow-y: auto;
 }
 
-.division {
+.input-container, .filter-container {
   background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   margin: 0;
@@ -39,7 +41,7 @@ body {
   box-sizing: border-box;
 }
 
-.list {
+.task-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,38 +49,38 @@ body {
   margin: 10px 0;
 }
 
-#app_title {
+#app-header {
   margin: 0 0 10px 0;
-  font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
-  font-weight: 550; /* Set font weight */
-  font-style: normal; /* Ensure the text is not italic */
-  font-size: 42px; /* Set font size */
-  color: rgb(0, 0, 0); /* Set text color */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
   margin: 0;
   margin-top: 10px;
-  font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
-  font-weight: 550; /* Set font weight */
-  font-style: normal; /* Ensure the text is not italic */
-  font-size: 24px; /* Set font size */
-  color: rgb(0, 0, 0); /* Set text color */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
 }
 
 button {
-  font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
-  font-weight: 550; /* Set font weight */
-  font-style: normal; /* Ensure the text is not italic */
-  font-size: 16px; /* Set font size */
-  color: #333; /* Set text color */
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 16px;
+  color: #333;
   padding: 5px 5px 20px 5px;
   cursor: pointer;
   margin: 0 5px;
   height: 20px;
   background-color: #000;
   color: #FFFFFF;
-  border: 1px solid #555;;
+  border: 1px solid #555;
   border-radius: 5px;
   font-size: 13px;
   transition: background-color 0.3s;
@@ -88,7 +90,7 @@ button:hover {
   background-color: #555;
 }
 
-.brightButton {
+.primaryButton {
   background-color: #ffdd00;
   color: #000;
 }
@@ -99,43 +101,43 @@ input[type="text"] {
 
 span {
   color: #000;
-  font-family: Helvetica, sans-serif; /* Set font to Arial */
-  font-weight: 550; /* Make the text bold */
-  font-style: normal; /* Ensure the text is not italic */
-  flex-grow: 1; /* Allow spans to grow and take up available space */
-  width: 100px; /* Set a specific width for the spans */
-  height: 30px; /* Set a specific height for the spans */
-  display: flex; /* Use flexbox to enable flex properties */
-  align-items: center; /* Center content vertically if needed */
-  justify-content: left; /* Center content horizontally if needed */
-  box-sizing: border-box; /* Include padding and border in width/height */
+  font-family: Helvetica, sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  flex-grow: 1;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  box-sizing: border-box;
 }
 
 input[type="checkbox"] {
-  width: 25px; /* Width of the checkbox */
-  height: 25px; /* Height of the checkbox */
-  appearance: none; /* Remove default styling */
-  border: 2px solid #ccc; /* Border for the checkbox */
-  background-color: white; /* Background color */
-  cursor: pointer; /* Pointer cursor on hover */
-  outline: none; /* Remove outline */
+  width: 25px;
+  height: 25px;
+  appearance: none;
+  border: 2px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
 }
 
 /* Style when the checkbox is checked */
 input[type="checkbox"]:checked {
-  background-color: rgb(191, 255, 0); /* Change background color to green */
-  border-color: rgb(191, 255, 0); /* Change border color to green */
+  background-color: rgb(191, 255, 0);
+  border-color: rgb(191, 255, 0);
 }
 
 input[type="checkbox"]:checked::after {
-  content: ''; /* Create a pseudo-element */
-  display: block; /* Display the checkmark */
-  width: 10px; /* Width of the checkmark */
-  height: 15px; /* Height of the checkmark */
-  border: solid rgb(0, 0, 0); /* Color of the checkmark */
-  border-width: 0 4px 4px 0; /* Create a checkmark shape */
-  transform: rotate(45deg); /* Rotate to form a checkmark */
-  position: relative; /* Position for the pseudo-element */
-  left: 5px; /* Position from the left */
-  top: -0px; /* Position from the top */
+  content: '';
+  display: block;
+  width: 10px;
+  height: 15px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+  position: relative;
+  left: 5px;
+  top: -0px;
 }
